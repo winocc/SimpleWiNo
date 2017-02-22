@@ -51,8 +51,8 @@ void send(uint16_t destAddress, uint8_t* payload, uint8_t len);
 
 Test and receive packets arrived on the MAC layer
 - payload : packet itself as an octets table
-- len : pointeur to packet length
-- sourceAddress : pointeur to source address
+- len : pointer to packet length
+- sourceAddress : pointer to source address
 - return 1 if a packet has been received, 0 else
 
 ```c
