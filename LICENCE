@@ -1,5 +1,8 @@
-This software is Copyright (C) 2017  Adrien van den Bossche <vandenbo@irit.fr>. Use is subject to license
-conditions. The main licensing options available are GPL V3+ or Commercial:
+This software is Copyright (C) 2017  Adrien van den Bossche <vandenbo@irit.fr>. 
+
+Use is subject to license conditions. 
+
+The main licensing options available are GPL V3+ or Commercial:
 
 GPL V3+
 
@@ -7,8 +10,9 @@ This is the appropriate option if you want to share the source code of your
 application with everyone you distribute it to, and you also want to give them
 the right to share who uses it. 
 
-If you wish to use this software under free software licensing, you must contribute all your source code to the the free software community in accordance with the GPL Version 3 or later when your application is
-distributed. 
+If you wish to use this software under free software licensing, you must contribute
+ all your source code to the the free software community in accordance with the 
+GPL Version 3 or later when your application is distributed. 
 
 See http://www.gnu.org/copyleft/gpl.html
 
