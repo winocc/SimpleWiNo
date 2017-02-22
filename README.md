@@ -1,24 +1,32 @@
 # SimpleWiNo
 
-A set of useful functions to use communications abailities of the WiNos boards.
+A set of useful functions to use communications abilities of the WiNos boards.
 
 ## General functions
 
 Initialisation of the object SimpleWiNo :
 
+```c
 void init();
+```
 
 MAC and PHY engines :
 
+```c
 void process();
+```
 
 Write a property :
 
+```c
 void set(uint8_t param, uint16_t value);
+```
 
 Read a property :
 
+```c
 uint16_t get(uint8_t param);
+```
 
 List of main properties usable :
 
@@ -30,39 +38,61 @@ List of main properties usable :
 - MAC_DEBUG : activate/deactivate verbosity for MAC layer
 
 
-///////// Primitives de communication /////////
+## Let's communicate !
+ 
+Ask MAC layer to send a data packet (N-PDU) with :
+- payload : packet itself as an octets table
+- len : payload length
+- destAddress : recipient address
 
-// Charger la couche MAC de transmettre un paquet (N-PDU).
-//   payload : le paquet sous forme d'un tableau d'octets
-//   len : la longueur du paquet
-//   destAddress : l'adresse du destinataire
-//   pas de retour
+```c
 void send(uint16_t destAddress, uint8_t* payload, uint8_t len);
+```
 
-// Tester et récupérer des paquets reçue par la couche MAC
-//   payload : le paquet sous forme d'un tableau d'octets
-//   len : le pointeur vers la longueur du paquet
-//   sourceAddress : le pointeur vers l'adresse de la source
-// recv retourne 1 si un paquet a été reçu, 0 sinon
+Test and receive packets arrived on the MAC layer
+- payload : packet itself as an octets table
+- len : pointeur to packet length
+- sourceAddress : pointeur to source address
+- return 1 if a packet has been received, 0 else
+
+```c
 uint8_t recv(uint16_t* sourceAddress, uint8_t* payload, uint8_t* len);
+```
 
+## Going deeper : create and read messages
 
-/////// Primitives d'aide à la création et à l'interprétation de messages ///////
+Obtain an unisgned 16 bits integer from an octet table :
 
-// Récupérer un entier 16 bits non-signé depuis un tableau d'octet
+```c
 uint16_t decodeUi16 ( uint8_t *data );
+```
 
-// Ecrire un entier 16 bits non-signé dans un tableau d'octet
+Write an unsigned 16 bits integer in an octet table :
+
+```c
 void encodeUi16 ( uint16_t from, uint8_t *to );
+```
 
-// Récupérer un entier 32 bits non-signé depuis un tableau d'octet
+Obtain an unsigned 32 bits integer from an octet table :
+
+```c
 uint32_t decodeUi32 ( uint8_t *data );
+```
 
-// Ecrire un entier 32 bits non-signé dans un tableau d'octet
+Write an unsigned 32 bits integer in an octet table :
+
+```c
 void encodeUi32 ( uint32_t from, uint8_t *to );
+```
 
-// Récupérer un flotant depuis un tableau d'octet
+Obtain a float from a table :
+
+```c
 float decodeFloat ( uint8_t *data );
+```
 
-// Ecrire un entier 32 bits non-signé dans un tableau d'octet
+Write a float to a table :
+
+```c
 void encodeFloat ( float from, uint8_t *to );
+```
