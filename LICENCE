@@ -1,12 +1,16 @@
+This software is Copyright (C) 2017  Adrien van den Bossche <vandenbo@irit.fr>. Use is subject to license
+conditions. The main licensing options available are GPL V3+ or Commercial:
 
-"SimpleWiNo" software in source code/binary form, was written 
-by Adrien van den Bossche <vandenbo@irit.fr>.
+GPL V3+
 
-It provides an easy way to use communication possibilities of the WiNo.
+This is the appropriate option if you want to share the source code of your
+application with everyone you distribute it to, and you also want to give them
+the right to share who uses it. 
 
-This programm is licenced under GPLv3+ or commercial according to your needs.
+If you wish to use this software under free software licensing, you must contribute all your source code to the the free software community in accordance with the GPL Version 3 or later when your application is
+distributed. 
 
-Feel free to contact the author for more informations.
+See http://www.gnu.org/copyleft/gpl.html
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -20,3 +24,11 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Commercial Licensing
+
+This is the appropriate option if you are creating proprietary applications
+and you are not prepared to distribute and share the source code of your
+application. Contact vandenbo@irit.fr for details.
+
+
